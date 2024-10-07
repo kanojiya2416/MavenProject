@@ -1,6 +1,8 @@
 package seleniumwebdriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.WebDriver;
 
 public class MavenDemo {
@@ -9,8 +11,10 @@ public class MavenDemo {
 		// TODO Auto-generated method stub
 			System.out.println("Login");
 //			ChromeDriver driver=new ChromeDriver();
-			WebDriver driver=new ChromeDriver();
-			
+//			WebDriver driver=new ChromeDriver();
+//		    WebDriver driver=new EdgeDriver(); 
+
+		    WebDriver driver=new FirefoxDriver();
 			driver.get("https://www.google.com");
 			
 			String title = driver.getTitle();
@@ -20,7 +24,7 @@ public class MavenDemo {
 				System.out.println("Test Failed");
 			}
 			
-			driver.close();
+//			driver.close();
 			
 	}
 
